@@ -1,3 +1,1 @@
-<script lang="ts">
-    export let data:any;
-</script>
+<script lang="ts"></script>

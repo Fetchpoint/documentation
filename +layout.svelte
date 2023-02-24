@@ -4,7 +4,7 @@
         {#if tree}
             <div class="slideup">
                 {#each Object.entries(tree) as [n,d]}
-                    <NavItem name="{n}" data="{d}" url="{n}" on:open="{(d)=>{open(d.detail)}}"/>
+                    <NavItem name="{n}" data="{d}" url="{n}" urlRoot="docs/" on:open="{(d)=>{open(d.detail)}}"/>
                 {/each}
             </div>
         {:else} 
@@ -64,7 +64,7 @@
 <style lang="scss">
 
     @keyframes rowEnter {
-        from{
+        0%{
             transform: translate3d(0px,0.5em,0px);
             opacity: 0;
         }
